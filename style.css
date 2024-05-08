@@ -1,0 +1,149 @@
+body{/*cuerpo*/
+    background-color: rgb(168, 216, 235);/*color de fondo*/
+}
+.kirby{/*centrado*/
+    margin: auto;
+}
+.cuerpo{/*ciculo(cuerpo)*/
+    margin: auto;/*margen*/ 
+    width: 300px;/*ancho*/
+    height: 300px;/*alto*/
+    border-radius: 50%;/*borde redondeado*/
+    border: groove rgb(255, 1, 149) 5px;/*anchpo del borde y color*/
+    background-color: rgb(238, 137, 192); /*color de la figura*/
+}
+.brazo1{
+    margin-top: -200px;/*margen arriba*/
+    margin-left: 468px;/*margen laterales*/
+    width: 130px;/*ancho*/
+    height: 80px;/*alto*/
+    border-radius: 50%;/*borde redondeado*/
+    border: groove rgb(255, 1, 149) 5px;/*anchpo del borde y color*/
+    background-color: rgb(238, 137, 192);/*color de la figura*/
+    rotate: 160grad;/*grado de inclinacion*/
+    position: relative;/*posicion por defecto*/
+    z-index: -1;/*posicion de la figura*/
+}
+.brazo2{
+    margin-top: -90px;/*margen arriba*/
+    margin-left: 740px;/*margen laterales*/
+    width: 130px;/*ancho*/
+    height: 80px;/*alto*/
+    border-radius: 50%;/*borde redondeado*/
+    border: groove rgb(255, 1, 149) 5px;/*anchpo del borde y color*/
+    background-color: rgb(238, 137, 192);/*color de la figura*/
+    rotate: 150grad;/*grado de inclinacion*/
+    position: relative;/*posicion por defecto*/
+    z-index: -1;/*posicion de la figura*/
+}
+.pie1{
+    margin-top: 40px;/*margen arriba*/
+    margin-left: 700px;/*margen laterales*/
+    width: 110px;/*ancho*/
+    height: 90px;/*alto*/
+    border-radius: 50%;/*borde redondeado*/
+    border: groove rgb(121, 9, 9) 5px;/*anchpo del borde y color*/
+    background-color: rgb(236, 26, 26);/*color de la figura*/
+}
+.pie2{
+    margin-top: -90px;/*margen arriba*/
+    margin-left: 540px;/*margen laterales*/
+    width: 110px;/*ancho*/
+    height: 90px;/*alto*/
+    border-radius: 50%;/*borde redondeado*/
+    border: groove rgb(121, 9, 9) 5px;/*anchpo del borde y color*/
+    background-color: rgb(236, 26, 26);/*color de la figura*/
+}
+.ojo1{
+    margin-top: -260px;/*margen arriba*/
+    margin-left: 590px;/*margen laterales*/
+    width: 55px;/*ancho*/
+    height: 90px;/*alto*/
+    border-radius: 50%;/*borde redondeado*/
+    background-image: -webkit-linear-gradient(top, rgb(0, 0, 0), rgb(36, 26, 122));/*color de la figura*/
+    /* rotate: 250grad; */
+}
+.ojo2{
+    margin-top: -90px;/*margen arriba*/
+    margin-left: 698px;/*margen laterales*/
+    width: 55px;/*ancho*/
+    height: 90px;/*alto*/
+    background-image: -webkit-linear-gradient(top, rgb(0, 0, 0), rgb(36, 26, 122));/*color de la figura*/
+    border-radius: 50%;/*borde redondeado*/
+}
+.pupila1{
+    margin-top: -90px;/*margen arriba*/
+    margin-left: 709px;/*margen laterales*/
+    width: 26px;/*ancho*/
+    height: 45px;/*alto*/
+    background-color: white;/*color de la figura*/
+    border-radius: 50%;/*borde redondeado*/
+}
+.pupila2{
+    margin-top: -45px;/*margen arriba*/
+    margin-left: 600px;/*margen laterales*/
+    width: 26px;/*ancho*/
+    height: 45px;/*alto*/
+    background-color: white;/*color de la figura*/
+    border-radius: 50%;/*borde redondeado*/
+}
+.chapa1{
+    margin-top: 42px;/*margen arriba*/
+    margin-left: 555px;/*margen laterales*/
+    width: 48px;/*ancho*/
+    height: 20px;/*alto*/
+    background-color: rgb(241, 51, 156);/*color de la figura*/
+    border-radius: 50%;/*borde redondeado*/
+}
+.chapa2{
+    margin-top: -16px;/*margen arriba*/
+    margin-left: 740px;/*margen laterales*/
+    width: 48px;/*ancho*/
+    height: 20px;/*alto*/
+    background-color: rgb(241, 51, 156);/*color de la figura*/
+    border-radius: 50%;/*borde redondeado*/
+}
+.boca{
+    position: absolute;
+    top: 31%;/*margen arriba*/
+    left: 44%;/*margen laterales*/
+    transform: translate(-50%, -50%);/*en que posicion estara*/
+    height: 35px;/*alto*/
+    width: 80px;/*ancho*/
+    border-radius: 150px 150px 0 0;/*borde redondeado*/
+    background-color: rgb(129, 40, 40);/*color de la figura*/
+    rotate: 200grad;/*grado de inclinacion*/
+}
+.lengua{
+    position: absolute;/*posicion*/
+    top: 38%;/*margen arriba*/
+    left: 50%;/*margen laterales*/
+    transform: translate(-50%, -50%);/*en que posicion estara*/
+    height: 22px;/*alto*/
+    width: 60px;/*ancho*/
+    border-radius: 120px 150px 110px 110px;/*borde redondeado*/
+    background-color: rgb(228, 118, 178);/*color de la figura*/
+    rotate: 1grad;/*grado de inclinacion*/
+}
+.cuadrado{
+   width: 100px;/*ancho*/
+   height: 100px;/*alto*/
+   border-radius: 50%;/*borde redondeado*/
+   background: rgb(255, 255, 255);/*color de la figura*/
+   position: absolute;/*posicion*/
+}
+.cuadrado.moviendo{
+  animation-duration: 3s;/*que tan rapido ira*/
+  animation-name: moviendo;/*que animacion tendra*/
+  animation-iteration-count: infinite;/*todo el tipo se movera*/
+  animation-direction: alternate;/*hacia donde*/
+  animation-timing-function: linear;/*de forma lineal*/
+}
+@keyframes moviendo {/*ayuda a adaptar a las pantallas*/
+  from {
+    left: 0;
+  }
+  to {
+    left: 1250px;
+  }
+}
